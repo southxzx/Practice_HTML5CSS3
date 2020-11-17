@@ -12,5 +12,19 @@ html{
 .row{
     max-width: 1140px;
     margin: 0 auto;
-    border: 1px solid rgb(27, 112, 91);
+    border: 1px solid rgb(27, 112, 91); 
+}
+
+header{ 
+    background-image: linear-gradient(rgba(29, 29, 29, 0.712),rgba(29, 29, 29, 0.712)), url(../img/vegetable.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
 }
