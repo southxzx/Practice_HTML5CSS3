@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+html{
+    background-color: #fff;
+    color: rgb(66, 66, 66);
+    font-weight: 200 ;
+    font-family: 'Raleway', sans-serif;
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+    border: 1px solid rgb(27, 112, 91);
+}
