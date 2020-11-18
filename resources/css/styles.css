@@ -1,3 +1,7 @@
+/*
+Orange color
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +10,7 @@
 html{
     background-color: #fff;
     color: rgb(66, 66, 66);
+    font-size: 20px;
     font-weight: 200 ;
     font-family: 'Raleway', sans-serif;
 }
@@ -15,6 +20,8 @@ html{
     border: 1px solid rgb(27, 112, 91); 
 }
 
+/* ------------------------HEADER------------------------ */
+
 header{ 
     background-image: linear-gradient(rgba(29, 29, 29, 0.712),rgba(29, 29, 29, 0.712)), url(../img/vegetable.jpg);
     background-size: cover;
@@ -23,8 +30,86 @@ header{
 }
 
 .hero-text-box{
+    width: 1140px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%)
+}
+
+h1{
+
+    color: #fff;
+    font-size: 250%;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px ;
+    color: #fff;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn-full:link,
+.btn-full:visited {
+    background-color:#e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+.btn:hover,
+.btn:active{
+    background-color: #cf6d17
+} 
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;
+}
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+/* ----------------------- LOGO -----------------------*/
+
+.logo {
+    height: 75px;
+    width: auto;
+    float: left;
+    margin-top: 30px;
+}
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size:90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    padding: 8px 0px;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
 }
