@@ -17,7 +17,6 @@ html{
 .row{
     max-width: 1140px;
     margin: 0 auto;
-    border: 1px solid rgb(27, 112, 91); 
 }
 
 /* ------------------------HEADER------------------------ */
@@ -105,6 +104,7 @@ h1{
     color: #fff;
     text-transform: uppercase;
     font-size:90%;
+    font-weight: 700;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
     padding: 8px 0px;
@@ -112,4 +112,10 @@ h1{
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
+}
+
+/* ----------------------- FEATURES -----------------------*/
+.col{
+    display: block;
+    float: left;
 }
