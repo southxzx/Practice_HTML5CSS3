@@ -14,9 +14,17 @@ html{
     font-weight: 200 ;
     font-family: 'Raleway', sans-serif;
 }
+
 .row{
     max-width: 1140px;
     margin: 0 auto;
+}
+
+section{
+    padding: 80px 0px;
+}
+.box{
+    padding:1%;
 }
 
 /* ------------------------HEADER------------------------ */
@@ -44,6 +52,33 @@ h1{
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 1px;
+}
+h2{
+    font-size: 180%;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3{
+    font-size: 110%;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+h2::after{
+    display: block;
+    height: 2px;
+    background-color:#e67e22;
+    content: "";
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .btn:link,
@@ -118,4 +153,52 @@ h1{
 .col{
     display: block;
     float: left;
+}
+
+.long-copy{
+    line-height:145%;
+    width: 70%;
+    margin-left: 15%;
+}
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+    padding-bottom: 30px;
+}
+
+/* ----------------------- ICON -----------------------*/
+.icon-big{
+    font-size:200%;
+    display: block; 
+    color: #e67e22;
+    margin-bottom: 15px;
+    padding: 15px 0px;
+}
+
+/* ----------------------- IMG -----------------------*/
+
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal-photo{
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;
+    transform: scale(1.15);
+    height: auto;
+    transition: transform 0.5s;
+}
+.meal-photo img:hover{
+    transform: scale(1.03);
+    opacity: 1;
 }
