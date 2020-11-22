@@ -21,7 +21,7 @@ html{
 }
 
 section{
-    padding: 80px 0px;
+    padding: 80px 0px 0px 0px;
 }
 .box{
     padding:1%;
@@ -181,6 +181,12 @@ h2::after{
     list-style: none;
     width: 100%;
 }
+ 
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
 .meals-showcase li{
     display: block;
     float: left;
@@ -201,4 +207,84 @@ h2::after{
 .meal-photo img:hover{
     transform: scale(1.03);
     opacity: 1;
+}
+
+
+/* ----------------------- HOW IT WORKS -----------------------*/
+
+.section-steps{
+    background-color: rgb(236, 236, 236);
+}
+
+.steps-box img{
+    width: 40%;
+}
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child{
+    padding-right:3%;
+    margin-top: 50px;
+}
+
+.btn-app img{
+    height: 50px;
+    width:auto;
+    margin-right: 10px;
+}
+
+.works-step{
+    margin-bottom: 50px;
+}
+.works-step:last-of-type{
+    margin-bottom:80px;
+}
+
+.works-step p{
+    padding-top: 5px;
+}
+
+.works-step div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block; 
+    border-radius: 50%;
+    height:55px;
+    width:55px;
+    text-align: center;
+    padding:5px;
+    float: left;
+    margin-right: 25px;;
+    font-size:150%;
+}
+
+/* ----------------------- CITY -----------------------*/
+.img-city{
+    width:100%;
+    height: auto;
+}
+
+.city-content h3{
+    padding: 15px 0px;
+    margin-bottom: 0px;
+}
+
+.city-content div i{
+    float: left;
+    padding: 0px 15px 0px 5px;
+    color: #e67e22;
+    padding-top: 2px;
+}
+
+.city-content div p{
+    padding-bottom: 7px !important;
+}
+
+.city-content div p a:link,
+.city-content div p a:visited{
+    color: #e67e22;
 }
