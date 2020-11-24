@@ -21,7 +21,7 @@ html{
 }
 
 section{
-    padding: 80px 0px 0px 0px;
+    padding: 40px 0px 40px 0px;
 }
 .box{
     padding:1%;
@@ -82,7 +82,9 @@ h2::after{
 }
 
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type="submit"]
+{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -92,7 +94,8 @@ h2::after{
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type="submit"] {
     background-color:#e67e22;
     border: 1px solid #e67e22;
     color: #fff;
@@ -104,7 +107,9 @@ h2::after{
     color: #e67e22;
 }
 .btn:hover,
-.btn:active{
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active{
     background-color: #cf6d17
 } 
 .btn-full:hover,
@@ -380,4 +385,108 @@ cite img{
     font-size: 50%;
     color: #e67e22;
     padding: 0 15px 0px 5px;
+}
+
+/* ---------------- CONTECT FORM --------------- */
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type="text"], 
+input[type="email"],
+select, 
+textarea{
+    width: 100%;
+    padding:7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type="checkbox"]{
+    margin: 13px 5px 13px 0;
+}
+
+*:focus{
+    outline: none;
+}
+
+/* ---------------- FOOTER --------------- */
+
+footer{
+    background-color: rgb(65, 65, 65);
+    padding: 60px;
+    font-size: 80%;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav  li:last-child,
+.social-links li:last-child{
+    margin-right: 0px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: none;
+    color: rgb(161, 161, 161);
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color:rgb(224, 224, 224);
+}
+
+footer p{
+    color: #888;
+    text-align: center;
+    margin-top:30px;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size:150%;
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram,
+.fa-google-plus-g{
+    transition: color 0.2s;
+}
+
+.fa-facebook-f:hover{
+    color: #3b5998;
+}
+.fa-twitter:hover{
+    color: #00aced;
+}
+.fa-instagram:hover{
+    color: #517fa4;
+}
+.fa-google-plus-g:hover{
+    color: #dd4b39;
 }
