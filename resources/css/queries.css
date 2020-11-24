@@ -127,6 +127,16 @@
     .contact-form{
         width: 100%;
     }
+    .social-links{
+        margin: 0 auto;
+    }
+    .social-links{
+        text-align: center;
+        float: none;
+    }
+    footer{
+        font-size: 60%;
+    }
 
 }
 
