@@ -7,16 +7,17 @@ Orange color
     padding: 0;
     box-sizing: border-box;    
 }
-html{
+html,body{
     background-color: #fff;
     color: rgb(66, 66, 66);
     font-size: 20px;
     font-weight: 200 ;
     font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
 }
 
 .row{
-    max-width: 1040px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -221,7 +222,7 @@ input[type="submit"]:active{
     background-color: rgb(236, 236, 236);
 }
 
-.steps-box img{
+.app-screen{
     width: 40%;
 }
 
@@ -239,7 +240,6 @@ input[type="submit"]:active{
 .btn-app img{
     height: 50px;
     width:auto;
-    margin-right: 10px;
 }
 
 .works-step{
